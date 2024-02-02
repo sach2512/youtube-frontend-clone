@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play video </title>
+    <link rel="stylesheet" href="style.css" />
+   
+</head>
+<style>
+    .containers{
+       
+        
+        height: 100vh;
+        width: 100vw;
+
+    }
+    .videoplay{
+       
+        flex-basis: 60%;
+        height: fit-content;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .rigthsidebar{
+        
+        flex-basis: 39%;
+        height: fit-content;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+    }
+    .playvideo{
+        height: 500px;
+        width: 100%;
+        
+    }
+    .sidevideolist img{
+        height: 150px;
+        width: 250px;
+    }
+    .sidevideolist{
+        display: flex;
+        margin-top: 10px;
+    }
+    .sidetext{
+        padding-left: 10px;
+        padding-top: 10px;
+        margin-top: 10px;
+        width: 200px;
+    }
+    .likeicon{
+        display: flex;
+        margin-top: 15px;
+    }
+    .icons img{
+        height: 20px;
+    }
+    .icons {
+        display: flex;
+       position: absolute;
+       margin-left: 600px;
+    }
+    li{
+    margin-left: 25px;
+   }
+   .icons h4{
+    margin-top: 2px;
+    margin-left: 2px;
+    
+   }
+   .subscribe  img{
+    width: 50px;
+    border-radius: 50px;
+   }
+   .subscribe{
+    display: flex;
+    
+   }
+   button{
+    background-color: red;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    border: 2px solid black;
+    margin-left: 500px;
+    cursor: pointer;
+   }
+   
+   .box{
+    
+    width: 80%;
+    
+   }
+   .commentcount{
+    font-size: 24px;
+    margin-top: 15px;
+    color: #5a5a5a;
+   }
+   .addcomment{
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+   }
+   .addcomment img{
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 15px;
+   }
+   .addcomment input{
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    padding-top: 10px;
+    background: transparent;
+   }
+   .oldcomments{
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+    margin: 20px 0;
+   }
+   .oldcomments img{
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 15px;
+   }
+   .oldcomments h4{
+    font-size: 24px;
+    margin-bottom: 2px;
+   }
+   .oldcomments span{
+    font-size: 15px;
+    color: #5a5a5a;
+    font-weight: 500;
+    margin-left: 5px;
+   }
+   .commentlikes{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 50px;
+    width: 50%;
+    justify-content: space-evenly;
+
+
+   }
+   .commentlikes img{
+    height: 20px;
+    width: 20px;
+   }
+   .count{
+    display: flex;
+   }
+   .commentaction{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin: 8px 0px;
+   }
+   .commentaction img{
+    border-radius: 0;
+    width: 20px;
+    margin-right: 5px;
+   }
+   .commentaction span{
+    margin-right: 20px;
+    color: #5a5a5a;
+   }
+   .subscribe h4{
+    color: #5a5a5a;
+    font-weight: 15px;
+   }
+
+   
+    
+</style>
+<body>
+    <div class="navigationbar fixed-top">
+        <div class="leftnav">
+          <ul>
+            <li><img src="images\menu.png" class="menuicon" id="menu" /></li>
+            <li><img src="images\logo.png" class="logo" /></li>
+          </ul>
+        </div>
+        <div class="middlenav">
+          <div class="searchbox">
+            <input type="textbox" class="input" placeholder="search" />
+            <img src="images\search.png" />
+          </div>
+          <img src="images\voice-search.png" class="mic" />
+        </div>
+        <div class="rightnav">
+          <ul>
+            <li><img src="images\upload.png" /></li>
+            <li><img src="images\more.png" /></li>
+            <li><img src="images\notification.png" /></li>
+            <li><img src="images\Jack.png" class="usericon" /></li>
+          </ul>
+        </div>
+    </div>
+    <div class="containers">
+       <div class="row">
+        <div class="videoplay">
+            <video controls autoplay class="playvideo">
+                <!--<source src="images\video.mp4" type="video/mp4">--->
+            </video>
+            <h4 style="color:blue">#Coding #HTML #CSS #Javascript</h4>
+            <h3 style="color: #5a5a5a;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quae?</h3>
+            <div class="likeicon">
+                <div>
+                    <h4 style="color: #5a5a5a;">1525 Views .2 days ago</h4>
+                </div>
+                <div class="icons">
+                    <ul>
+                        <li><img src="images\like.png" /></li>
+                        <h4>125</h4>
+                      </ul>
+                      <ul>
+                        <li><img src="images\dislike.png" /></li>
+                        <h4>25</h4>
+                      </ul>
+                      <ul>
+                        <li><img src="images\share.png" /></li>
+                        <h4>Shaare</h4>
+                      </ul>
+                      <ul>
+                        <li><img src="images\save.png" /></li>
+                        <h4>save</h4>
+                      </ul>
+                </div>
+            </div><br>
+            <hr><br>
+            <div class="subscribe">
+                <ul>
+                    <li><img src="images\jack.png"  /></li>
+                   <div style="margin-top: 5px;">
+                    <h4 style="margin-left: 15px;">Coding Tutorial</h4>
+                    <h4 style="margin-left: 15px;">500k Subscriber</h4>
+                   </div>
+                </ul>
+                <button><h4>subscribe</h4></button>
+
+            </div>
+            <br>
+            <hr>
+            
+            <h4 class="commentcount">134 Comments</h4>
+
+
+            <div class="addcomment">
+                <img src="images\jack.png">
+                <input type="text" placeholder="comment here">
+            </div>
+            <div class="oldcomments">
+                <img src="images\jack.png">
+                <div>
+                    <h3>Jack Nicholas <span>2 days ago</span></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quis consequuntur suscipit,
+                         explicabo enim facilis laboriosam fugit dolorum impedit commodi.
+                        </p>
+                         <div class="commentaction">
+                            <img src="images\like.png"><span>244</span>
+                            <img src="images\dislike.png"><span>44</span>
+                            <span>REPLY</span>
+                            <span style="color: blue;">All Replies</span>
+                         </div>
+                   
+                </div>
+              
+            </div>
+            <div class="oldcomments">
+                <img src="images\jack.png">
+                <div>
+                    <h3>Jack Nicholas <span>2 days ago</span></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quis consequuntur suscipit,
+                         explicabo enim facilis laboriosam fugit dolorum impedit commodi.
+                        </p>
+                         <div class="commentaction">
+                            <img src="images\like.png"><span>244</span>
+                            <img src="images\dislike.png"><span>44</span>
+                            <span>REPLY</span>
+                            <span style="color: blue;">All Replies</span>
+                         </div>
+                   
+                </div>
+              
+            </div>
+            <div class="oldcomments">
+                <img src="images\jack.png">
+                <div>
+                    <h3>Jack Nicholas <span>2 days ago</span></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quis consequuntur suscipit,
+                         explicabo enim facilis laboriosam fugit dolorum impedit commodi.
+                        </p>
+                         <div class="commentaction">
+                            <img src="images\like.png"><span>244</span>
+                            <img src="images\dislike.png"><span>44</span>
+                            <span>REPLY</span>
+                            <span style="color: blue;">All Replies</span>
+                         </div>
+                   
+                </div>
+              
+            </div>
+            <div class="oldcomments">
+                <img src="images\jack.png">
+                <div>
+                    <h3>Jack Nicholas <span>2 days ago</span></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quis consequuntur suscipit,
+                         explicabo enim facilis laboriosam fugit dolorum impedit commodi.
+                        </p>
+                         <div class="commentaction">
+                            <img src="images\like.png"><span>244</span>
+                            <img src="images\dislike.png"><span>44</span>
+                            <span>REPLY</span>
+                            <span style="color: blue;">All Replies</span>
+                         </div>
+                   
+                </div>
+              
+            </div>
+            <div class="oldcomments">
+                <img src="images\jack.png">
+                <div>
+                    <h3>Jack Nicholas <span>2 days ago</span></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quis consequuntur suscipit,
+                         explicabo enim facilis laboriosam fugit dolorum impedit commodi.
+                        </p>
+                         <div class="commentaction">
+                            <img src="images\like.png"><span>244</span>
+                            <img src="images\dislike.png"><span>44</span>
+                            <span>REPLY</span>
+                            <span style="color: blue;">All Replies</span>
+                         </div>
+                   
+                </div>
+              
+            </div>
+            <div class="oldcomments">
+                <img src="images\jack.png">
+                <div>
+                    <h3>Jack Nicholas <span>2 days ago</span></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quis consequuntur suscipit,
+                         explicabo enim facilis laboriosam fugit dolorum impedit commodi.
+                        </p>
+                         <div class="commentaction">
+                            <img src="images\like.png"><span>244</span>
+                            <img src="images\dislike.png"><span>44</span>
+                            <span>REPLY</span>
+                            <span style="color: blue;">All Replies</span>
+                         </div>
+                   
+                </div>
+              
+            </div>
+            <div class="oldcomments">
+                <img src="images\jack.png">
+                <div>
+                    <h3>Jack Nicholas <span>2 days ago</span></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quis consequuntur suscipit,
+                         explicabo enim facilis laboriosam fugit dolorum impedit commodi.
+                        </p>
+                         <div class="commentaction">
+                            <img src="images\like.png"><span>244</span>
+                            <img src="images\dislike.png"><span>44</span>
+                            <span>REPLY</span>
+                            <span style="color: blue;">All Replies</span>
+                         </div>
+                   
+                </div>
+              
+            </div>
+            <div class="oldcomments">
+                <img src="images\jack.png">
+                <div>
+                    <h3>Jack Nicholas <span>2 days ago</span></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quis consequuntur suscipit,
+                         explicabo enim facilis laboriosam fugit dolorum impedit commodi.
+                        </p>
+                         <div class="commentaction">
+                            <img src="images\like.png"><span>244</span>
+                            <img src="images\dislike.png"><span>44</span>
+                            <span>REPLY</span>
+                            <span style="color: blue;">All Replies</span>
+                         </div>
+                   
+                </div>
+              
+            </div>
+            <div class="oldcomments">
+                <img src="images\jack.png">
+                <div>
+                    <h3>Jack Nicholas <span>2 days ago</span></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quis consequuntur suscipit,
+                         explicabo enim facilis laboriosam fugit dolorum impedit commodi.
+                        </p>
+                         <div class="commentaction">
+                            <img src="images\like.png"><span>244</span>
+                            <img src="images\dislike.png"><span>44</span>
+                            <span>REPLY</span>
+                            <span style="color: blue;">All Replies</span>
+                         </div>
+                   
+                </div>
+              
+            </div>
+            <div class="oldcomments">
+                <img src="images\jack.png">
+                <div>
+                    <h3>Jack Nicholas <span>2 days ago</span></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quis consequuntur suscipit,
+                         explicabo enim facilis laboriosam fugit dolorum impedit commodi.
+                        </p>
+                         <div class="commentaction">
+                            <img src="images\like.png"><span>244</span>
+                            <img src="images\dislike.png"><span>44</span>
+                            <span>REPLY</span>
+                            <span style="color: blue;">All Replies</span>
+                         </div>
+                   
+                </div>
+              
+            </div>
+           
+           
+         
+           
+           
+        </div>
+        <div class="rigthsidebar">
+            <div class="sidevideolist">
+                <img src="images\thumbnail1.png">
+                <div class="sidetext">
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
+                    <p>Easy Tutorial</p>
+                    <p>15k views</p>
+                </div>
+                
+            </div>
+            <div class="sidevideolist">
+                <img src="images\thumbnail2.png">
+                <div class="sidetext">
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
+                    <p>Easy Tutorial</p>
+                    <p>15k views</p>
+                </div>
+                
+            </div>
+            <div class="sidevideolist">
+                <img src="images\thumbnail3.png">
+                <div class="sidetext">
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
+                    <p>Easy Tutorial</p>
+                    <p>15k views</p>
+                </div>
+                
+            </div>
+            <div class="sidevideolist">
+                <img src="images\thumbnail4.png">
+                <div class="sidetext">
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
+                    <p>Easy Tutorial</p>
+                    <p>15k views</p>
+                </div>
+                
+            </div>
+            <div class="sidevideolist">
+                <img src="images\thumbnail5.png">
+                <div class="sidetext">
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
+                    <p>Easy Tutorial</p>
+                    <p>15k views</p>
+                </div>
+                
+            </div>
+            <div class="sidevideolist">
+                <img src="images\thumbnail6.png">
+                <div class="sidetext">
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
+                    <p>Easy Tutorial</p>
+                    <p>15k views</p>
+                </div>
+                
+            </div>
+            <div class="sidevideolist">
+                <img src="images\thumbnail7.png">
+                <div class="sidetext">
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
+                    <p>Easy Tutorial</p>
+                    <p>15k views</p>
+                </div>
+                
+            </div>
+            <div class="sidevideolist">
+                <img src="images\thumbnail7.png">
+                <div class="sidetext">
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
+                    <p>Easy Tutorial</p>
+                    <p>15k views</p>
+                </div>
+                
+            </div>
+            <div class="sidevideolist">
+                <img src="images\thumbnail2.png">
+                <div class="sidetext">
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
+                    <p>Easy Tutorial</p>
+                    <p>15k views</p>
+                </div>
+                
+            </div>
+            <div class="sidevideolist">
+                <img src="images\thumbnail4.png">
+                <div class="sidetext">
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
+                    <p>Easy Tutorial</p>
+                    <p>15k views</p>
+                </div>
+                
+            </div>
+            <div class="sidevideolist">
+                <img src="images\thumbnail1.png">
+                <div class="sidetext">
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
+                    <p>Easy Tutorial</p>
+                    <p>15k views</p>
+                </div>
+                
+            </div>
+            <div class="sidevideolist">
+                <img src="images\thumbnail8.png">
+                <div class="sidetext">
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
+                    <p>Easy Tutorial</p>
+                    <p>15k views</p>
+                </div>
+                
+            </div>
+        </div>
+       </div>
+    </div>
+   
+</body>
+</html>

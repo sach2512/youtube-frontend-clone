@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "sans-serif", "poppins";
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+  display: flex;
+}
+a{
+  text-decoration: none;
+  
+}
+
+li {
+  cursor: pointer;
+}
+.container-fluid {
+  width: 100%;
+}
+.navigationbar {
+  display: flex;
+  padding: 10px 2%;
+
+  justify-content: space-between;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  background: #fff;
+}
+.rightnav,
+.leftnav {
+  width: 25%;
+
+  align-items: center;
+}
+.rightnav img {
+  width: 40px;
+  margin-left: 28px;
+}
+.rightnav .usericon {
+  width: 35px;
+  border-radius: 50%;
+  margin-right: 0;
+  margin-top: 4px;
+}
+.menuicon {
+  width: 32px;
+  height: 25px;
+  margin-right: 25px;
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-top: 5px;
+}
+.logo {
+  width: 120px;
+  margin-top: 10px;
+}
+.middlenav {
+  width: 50%;
+
+  align-items: center;
+  display: flex;
+  margin-right: 20px;
+  justify-content: center;
+}
+.mic {
+  width: 20px;
+}
+.searchbox {
+  border: 3px solid #ccc;
+  margin-right: 15px;
+  padding: 8px 12px;
+  border-radius: 25px;
+  width: 80%;
+}
+.input {
+  width: 80%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+.searchbox img {
+  width: 25px;
+}
+.sidebar {
+  /* Keep height dynamic based on viewport height */
+  height: calc(100vh - 75px); /* Adjust as needed */
+  width: 18%;
+  overflow-y: auto; /* Enable scrolling only when necessary */
+  overflow-x: hidden;
+  flex-wrap: wrap;
+  bottom: 0;
+  align-items: center;
+  position: fixed;
+  top: 75px;
+}
+
+.sideitems img {
+  width: 30px;
+}
+
+.subscribed img {
+  width: 35px;
+  border-radius: 50%;
+}
+.sidebar h4 {
+  margin-left: 20px;
+  font-size: 13px;
+  color: #5a5a5a;
+  margin-top: 10px;
+}
+.smallsidebar {
+  width: 6%;
+}
+
+.smallsidebar .note h4 {
+  margin-left: 0px;
+  z-index: 10;
+}
+.container {
+  height: fit-content;
+
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 18.8%;
+ 
+  top: 75px;
+}
+
+
+.container{
+  background: #f9f9f9;
+  padding-left: 17%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 2px;
+}
+.largecontainer{
+  padding: 7%;
+  width: 100%;
+  margin-top: 0;
+
+}
+.banner{
+  width: 100%;
+}
+.banner img{
+  width: 95%;
+  border-radius: 8px;
+}
+.channels{
+  width: 100%;
+  margin-top: 10px;
+ 
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,3fr));
+ grid-row-gap:30px;
+ grid-column-gap:16px;
+ margin-top:15px
+}
+.channel-1{
+  
+  height: fit-content;
+  width: 270px;
+ 
+  
+ 
+  
+  
+}
+.thumbnail{
+  height: 150px;
+ 
+ 
+  border-radius: 5px;
+}
+
+.channeldescription{
+  display: flex;
+  margin-left: 0;
+}
+.channeldescription h6{
+  width: 300px;
+  
+  font-weight: bold;
+  height: 50px;
+  margin-top: 15px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.channeldescription img{
+  border-radius: 50px;
+  height: 35px;
+  margin-top: 15px;
+  padding-left: 5px;
+}
+
+
+@media (max-width:900px){
+  .rightnav {
+    border: 2px solid red;
+    width: 10%;
+  }
+  .rightnav img{
+    display: none;
+  }
+ .rightnav .usericon{
+  display: block;
+  width: 100%;
+  margin-left: 0;
+  padding: 0;
+ }
+  .middlenav{
+    border: 2px solid red;
+    width: 30%;
+
+  }
+  .leftnav{
+    border: 2px solid red;
+    width: 10%;
+  }
+  .navigationbar {
+    justify-content: space-around;
+  }
+   
+}
+@media (max-width:700px){
+  .rightnav {
+    border: 2px solid red;
+   
+    
+  }
+  .rightnav .usericon {
+    
+padding: 0%;
+margin-left: 0%;
+width: 100%;
+height: 100%;
+   
+    
+  }
+  
+
+  .middlenav{
+    border: 2px solid red;
+   
+    
+
+  }
+  
+  .searchbox img{
+    display: none;
+  }
+  .leftnav{
+    border: 2px solid red;
+  
+   
+  }
+  .leftnav .logo{
+    display: none;
+  }
+  .sidebar h4{
+    display: none;
+  }
+  .navigationbar{
+    justify-content: space-evenly;
+  }
+ .banner{
+  width: 700px;
+ }
+  
+   
+}
+
