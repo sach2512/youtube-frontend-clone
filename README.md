@@ -12,9 +12,7 @@ YouTube UI Clone is a project that replicates the user interface of the YouTube 
 - Responsive layout: Designed to be accessible and user-friendly across various devices.
 - Easy to use: The interface provides a seamless experience for users familiar with YouTube.
 
-## Screenshots
 
-![YouTube UI Clone Screenshot]()
 
 
 ## Usage
